@@ -4,7 +4,8 @@
 ![Imgur](https://i.imgur.com/f2gQdKo.png)
 
 + 資訊來源係香港天文台官方嘅api, 預設地區為香港天文台。  
-可以喺程式內改為你住嗰區（如九龍城、深水埗、觀塘…等）。  
+可以喺程式內改為你住嗰區（如九龍城、深水埗、觀塘…等）。   
+(新增) 可使用的地區名稱請以 dist_finder.py 查閱。 
 詳情請參考以下資料,  
 https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_tc.pdf
 
@@ -29,7 +30,7 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
 刪除 `epaper_Start()` 及 `epaper_Exit()` 前面嘅 `#` 即可於 e-Paper 顯示。  
 可以用 <kbd>Ctrl</kbd>+<kbd>C</kbd> 退出。
 
-+ 因為 e-Paper 嘅特性係會顯示最後嘅畫面，就算斷咗電都唔會消失。 
++ 因為 e-Paper 嘅特性係會顯示最後嘅畫面，就算斷咗電都唔會消失。   
 要清除畫面可以用 Cleaner_epd2in9_V2.py。
 
 + e-Paper 另一特性係容易消印，長期顯示同一畫面會令到啲像素不能回復。  
@@ -78,7 +79,8 @@ https://www.waveshare.com/wiki/2.9inch_e-Paper_Module
 6. Replace the font inside fonts folder if necessary.  
 
 7. Edit WiHKger_epd2in9_V2.py as below,  
-    + Choose your district by changing the position of `#` before `dist = ` & `rainfall_dist = `   
+    + Choose your district by changing the position of `#` before `dist = ` & `rainfall_dist = `  
+    + (New) Use dist_finder.py to find out all available district area name.
     + Take out the `#` before `epaper_Start()` & `epaper_Exit()` to let the e-Paper work.   
 You can use  <kbd>Ctrl</kbd>+<kbd>C</kbd> to exit the program.
 
