@@ -41,6 +41,12 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
 + YouTube : 
 https://youtu.be/byxogmUsSgY
 
+#### Changelog  
++ v1.1 - 2022-02-24  
+    + Added dist_finder.py
+    + Bugs fix
+
+
 ---
 #### Hardware requirements 
 
@@ -81,7 +87,8 @@ https://www.waveshare.com/wiki/2.9inch_e-Paper_Module
 7. Edit WiHKger_epd2in9_V2.py as below,  
     + Choose your district by changing the position of `#` before `dist = ` & `rainfall_dist = `  
     + (New) Use dist_finder.py to find out all available district area name.
-    + Take out the `#` before `epaper_Start()` & `epaper_Exit()` to let the e-Paper work.   
+    + Take out the `#` before `epaper_Start()`, `epaper_Display()` & `epaper_Exit()`   
+    to let the e-Paper work.   
 You can use  <kbd>Ctrl</kbd>+<kbd>C</kbd> to exit the program.
 
 8. Finally, suggest to make a case or a frame to protect the e-Paper module.   
