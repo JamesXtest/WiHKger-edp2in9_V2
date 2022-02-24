@@ -41,11 +41,12 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
 + YouTube : 
 https://youtu.be/byxogmUsSgY
 
+---
+
 #### Changelog  
 + v1.1 - 2022-02-24  
     + Added dist_finder.py
     + Bugs fix
-
 
 ---
 #### Hardware requirements 
