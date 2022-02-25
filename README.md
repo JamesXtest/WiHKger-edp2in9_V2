@@ -5,7 +5,7 @@
 
 + 資訊來源係香港天文台官方嘅api, 預設地區為香港天文台。  
 可以喺程式內改為你住嗰區（如九龍城、深水埗、觀塘…等）。   
-(新增) 可使用的地區名稱請以 dist_finder.py 查閱。 
+(新增) 可使用的地區名稱請以 dist_finder.py 查閱。   
 詳情請參考以下資料,  
 https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_tc.pdf
 
@@ -27,8 +27,11 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
   https://www.weather.gov.hk/textonly/v2/explain/wxicon_c.htm
 
 + 預設只會喺 temp folder 顯示圖片。  
-刪除 `epaper_Start()` 及 `epaper_Exit()` 前面嘅 `#` 即可於 e-Paper 顯示。  
-可以用 <kbd>Ctrl</kbd>+<kbd>C</kbd> 退出。
+刪除 `epaper_Start()` 及 `epaper_Exit()` 前面嘅 `#` 即可於 e-Paper 顯示。
+<br>  
+注意 : WiHKger_epd2in9_V2.py 需要刪除   
+`epaper_Start()`, `epaper_Display()`及 `epaper_Exit()` 前面嘅 `#` 。  
+用 <kbd>Ctrl</kbd>+<kbd>C</kbd> 可以退出。
 
 + 因為 e-Paper 嘅特性係會顯示最後嘅畫面，就算斷咗電都唔會消失。   
 要清除畫面可以用 Cleaner_epd2in9_V2.py。
@@ -40,11 +43,15 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
 + 建議做返個機殼, 果塊 e-Paper 十分脆弱, 不適宜裸機使用。
 + YouTube : 
 https://youtu.be/byxogmUsSgY
++ Git clone :  
+> ```python3
+> git clone https://github.com/JamesXtest/WiHKger-edp2in9_V2.git
+> ```
 
 ---
 
 #### Changelog  
-+ v1.1 - 2022-02-24  
++ [v1.1]  2022-02-24  
     + Added dist_finder.py
     + Bugs fix
 
@@ -70,27 +77,32 @@ https://www.waveshare.com/wiki/2.9inch_e-Paper_Module
 > python3 -m pip install pillow --upgrade
 > ```
      
-4. Driver for e-Paper 2.9" e-Paper Module(epd2in9_V2) was included in data_folder,  
- replace the driver if you got a different model of e-Paper.
+4. Download WiHKger_epd2in9_v2 as following,
+> ```python3
+> git clone https://github.com/JamesXtest/WiHKger-edp2in9_V2.git
+> ```
+>
+> Notice:  
+>Driver for e-Paper 2.9" e-Paper Module(epd2in9_V2) was included in data_folder,  
+>replace the driver if you got a different model of e-Paper.
 
 5. Download icon, rename and place into icons folder.   
     + Test icon by test_icon.py. 
     + Check the picture in temp folder.   
-    + You can cleanup the epaper by running Cleaner_epd2in9_V2.py.
+    + You can cleanup the e-Paper by running Cleaner_epd2in9_V2.py.
 
-> Notice:
-> The icon must be named in xx.bmp (eg. 50.bmp).  
+> Notice:  
+> The icon must be named in xx.bmp (eg. 50.bmp, 51.bmp, ...).  
 > Name the icon follow the information from below website,  
 > https://www.hko.gov.hk/textonly/v2/explain/wxicon_e.htm
 
 6. Replace the font inside fonts folder if necessary.  
 
 7. Edit WiHKger_epd2in9_V2.py as below,  
-    + Choose your district by changing the position of `#` before `dist = ` & `rainfall_dist = `  
+    + Choose your district by changing the position of `#` before `dist = ` & `rainfall_dist = `  .
     + (New) Use dist_finder.py to find out all available district area name.
-    + Take out the `#` before `epaper_Start()`, `epaper_Display()` & `epaper_Exit()`   
-    to let the e-Paper work.   
-You can use  <kbd>Ctrl</kbd>+<kbd>C</kbd> to exit the program.
+    + Take out the `#` before `epaper_Start()`, `epaper_Display()` & `epaper_Exit()` to let the e-Paper work.   
+    + You can use  <kbd>Ctrl</kbd>+<kbd>C</kbd> to exit the program.
 
 8. Finally, suggest to make a case or a frame to protect the e-Paper module.   
 It seems really crackly.
