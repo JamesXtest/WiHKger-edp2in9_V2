@@ -30,7 +30,9 @@ https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_t
 刪除 `epaper_Start()` 及 `epaper_Exit()` 前面嘅 `#` 即可於 e-Paper 顯示。
 <br>  
 注意 : WiHKger_epd2in9_V2.py 需要刪除   
-`epaper_Start()`, `epaper_Display()`及 `epaper_Exit()` 前面嘅 `#` 。  
+
+ `epaper_Start()`, `epaper_Display()`及 `epaper_Exit()` 前面嘅 `#` 。   
+ 
 用 <kbd>Ctrl</kbd>+<kbd>C</kbd> 可以退出。
 
 + 因為 e-Paper 嘅特性係會顯示最後嘅畫面，就算斷咗電都唔會消失。   
@@ -47,6 +49,8 @@ https://youtu.be/byxogmUsSgY
 > ```python3
 > git clone https://github.com/JamesXtest/WiHKger-edp2in9_V2.git
 > ```
+![Imgur](https://i.imgur.com/Lwa5LAo.jpg)  
+![Imgur](https://i.imgur.com/9wTg5II.jpg)
 
 ---
 
