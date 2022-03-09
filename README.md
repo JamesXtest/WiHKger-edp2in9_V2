@@ -49,8 +49,8 @@ https://youtu.be/byxogmUsSgY
 > ```python3
 > git clone https://github.com/JamesXtest/WiHKger-edp2in9_V2.git
 > ```
-![Imgur](https://i.imgur.com/Lwa5LAo.jpg)  
-![Imgur](https://i.imgur.com/9wTg5II.jpg)
+![Imgur](https://i.imgur.com/CqrFPNJ.jpg)  
+![Imgur](https://i.imgur.com/Ze4dhL5.jpg)
 
 ---
 
